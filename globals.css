@@ -1,0 +1,17 @@
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "Juvinal Silva | Consultoria Ambiental e Organizacional",
+  description:
+    "Consultoria em ambiente, WASH, alterações climáticas, gestão de projetos, pesquisa aplicada e desenvolvimento organizacional na Guiné-Bissau.",
+  icons: { icon: "/favicon.svg" },
+};
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="pt">
+      <body>{children}</body>
+    </html>
+  );
+}
